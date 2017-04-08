@@ -1,0 +1,29 @@
+unit SetUnit;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TSetForm = class(TForm)
+    lbl1: TLabel;
+    edtFilePath: TEdit;
+    btnSelect: TButton;
+    btnOK: TButton;
+    btnCancel: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  SetForm: TSetForm;
+
+implementation
+
+{$R *.dfm}
+
+end.

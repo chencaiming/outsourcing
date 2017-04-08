@@ -2,7 +2,8 @@ program ra;
 
 uses
   Forms,
-  MainUnit in 'MainUnit.pas' {MainForm};
+  MainUnit in 'MainUnit.pas' {MainForm},
+  SetUnit in 'SetUnit.pas' {SetForm};
 
 {$R *.res}
 

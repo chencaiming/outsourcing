@@ -24,9 +24,7 @@ type
     btnImport: TButton;
     btnLog: TButton;
     btnSave: TButton;
-    dlgOpen1: TOpenDialog;
     procedure N1Click(Sender: TObject);
-    procedure btnImportClick(Sender: TObject);
     private
     { Private declarations }
 
@@ -50,14 +48,6 @@ begin
         SetForm.ShowModal;
     finally
         SetForm.Free;
-    end;
-end;
-
-procedure TMainForm.btnImportClick(Sender: TObject);
-begin
-    if dlgOpen1.Execute then
-    begin
-
     end;
 end;
 
