@@ -1,0 +1,20 @@
+program ra;
+
+uses
+  Forms,
+  MainUnit in 'MainUnit.pas' {MainForm},
+  GenDomainUnit in 'GenDomainUnit.pas',
+  QueryDomainUnit in 'QueryDomainUnit.pas',
+  RegExpr in '..\..\base\RegExpr.pas',
+  superobject in '..\..\base\superobject.pas',
+  uThreadPool in '..\..\base\uThreadPool.pas',
+  YQAPI in '..\..\base\YQAPI.pas',
+  Base_Thread in '..\..\base\Base_Thread.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TMainForm, MainForm);
+  Application.Run;
+end.
