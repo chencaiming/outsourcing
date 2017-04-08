@@ -56,6 +56,7 @@ object MainForm: TMainForm
     Height = 25
     Caption = #23548#20837
     TabOrder = 4
+    OnClick = btnImportClick
   end
   object btnLog: TButton
     Left = 564
@@ -83,5 +84,10 @@ object MainForm: TMainForm
     object N2: TMenuItem
       Caption = #24110#21161'(&H)'
     end
+  end
+  object dlgOpen1: TOpenDialog
+    Filter = #25991#26412#25991#26723'(*.txt)|*.txt|'#25152#26377#25991#20214'(*.*)|*.*'
+    Left = 440
+    Top = 344
   end
 end
