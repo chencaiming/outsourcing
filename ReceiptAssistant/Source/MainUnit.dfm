@@ -1,11 +1,11 @@
 object MainForm: TMainForm
-  Left = 176
-  Top = 14
+  Left = 213
+  Top = 80
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = #20184#20020#38376#25910#21333#21161#25163
-  ClientHeight = 638
-  ClientWidth = 1049
+  ClientHeight = 580
+  ClientWidth = 840
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,50 +15,481 @@ object MainForm: TMainForm
   Menu = mmMain
   OldCreateOrder = False
   Position = poDesktopCenter
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object grpRegInfo: TGroupBox
     Left = 8
     Top = 8
-    Width = 433
+    Width = 473
     Height = 545
     Caption = #21830#25143#27880#20876#20449#24687
     TabOrder = 0
     object lbl1: TLabel
-      Left = 24
-      Top = 40
+      Left = 16
+      Top = 24
       Width = 60
       Height = 13
       Caption = #21830#25143#21517#31216#65306
     end
     object lbl2: TLabel
-      Left = 224
-      Top = 40
+      Left = 240
+      Top = 24
       Width = 60
       Height = 13
       Caption = #21830#25143#24215#21517#65306
     end
+    object lbl13: TLabel
+      Left = 16
+      Top = 54
+      Width = 60
+      Height = 13
+      Caption = #27880#20876#22320#22336#65306
+    end
+    object lbl14: TLabel
+      Left = 16
+      Top = 85
+      Width = 60
+      Height = 13
+      Caption = #35013#26426#22320#22336#65306
+    end
+    object lbl15: TLabel
+      Left = 16
+      Top = 116
+      Width = 60
+      Height = 13
+      Caption = #27861#20154#20195#34920#65306
+    end
+    object lbl16: TLabel
+      Left = 240
+      Top = 116
+      Width = 60
+      Height = 13
+      Caption = #36523'  '#20221'  '#35777#65306
+    end
+    object lbl17: TLabel
+      Left = 16
+      Top = 146
+      Width = 60
+      Height = 13
+      Caption = #32463#33829#33539#22260#65306
+    end
+    object lbl18: TLabel
+      Left = 16
+      Top = 176
+      Width = 60
+      Height = 13
+      Caption = #23454#38469#32463#33829#65306
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lbl19: TLabel
+      Left = 16
+      Top = 207
+      Width = 60
+      Height = 13
+      Caption = #33829#19994#26399#38480#65306
+    end
+    object lbl20: TLabel
+      Left = 16
+      Top = 238
+      Width = 60
+      Height = 13
+      Caption = #32467#31639#25143#21517#65306
+    end
+    object lbl21: TLabel
+      Left = 240
+      Top = 238
+      Width = 60
+      Height = 13
+      Caption = #31227#21160#30005#35805#65306
+    end
+    object lbl22: TLabel
+      Left = 16
+      Top = 268
+      Width = 60
+      Height = 13
+      Caption = #24320#25143#38134#34892#65306
+    end
+    object lbl23: TLabel
+      Left = 16
+      Top = 298
+      Width = 60
+      Height = 13
+      Caption = #36523'  '#20221'  '#35777#65306
+    end
+    object lbl24: TLabel
+      Left = 240
+      Top = 298
+      Width = 60
+      Height = 13
+      Caption = #32467#31639#24080#21495#65306
+    end
+    object lbl25: TLabel
+      Left = 16
+      Top = 329
+      Width = 60
+      Height = 13
+      Caption = #35013#26426#22330#25152#65306
+    end
+    object lbl26: TLabel
+      Left = 240
+      Top = 329
+      Width = 60
+      Height = 13
+      Caption = #32456#31471#22411#24335#65306
+    end
+    object lbl27: TLabel
+      Left = 16
+      Top = 360
+      Width = 60
+      Height = 13
+      Caption = #37038#25919#32534#30721#65306
+    end
+    object lbl28: TLabel
+      Left = 240
+      Top = 359
+      Width = 60
+      Height = 13
+      Caption = #21457'  '#23637'  '#26041#65306
+    end
+    object lbl29: TLabel
+      Left = 16
+      Top = 390
+      Width = 60
+      Height = 13
+      Caption = #32456#31471#25968#37327#65306
+    end
+    object lbl30: TLabel
+      Left = 240
+      Top = 390
+      Width = 60
+      Height = 13
+      Caption = #32465#23450#30005#35805#65306
+    end
+    object lblProgramFee: TLabel
+      Left = 16
+      Top = 420
+      Width = 60
+      Height = 13
+      Caption = #25163#32493#36153#29575#65306
+    end
+    object lbl31: TLabel
+      Left = 240
+      Top = 420
+      Width = 60
+      Height = 13
+      Caption = #20986'  '#31199'  '#26041#65306
+    end
+    object lbl32: TLabel
+      Left = 16
+      Top = 451
+      Width = 60
+      Height = 13
+      Caption = #31199#20973#38754#31215#65306
+    end
+    object lbl33: TLabel
+      Left = 240
+      Top = 451
+      Width = 60
+      Height = 13
+      Caption = #31199'  '#37329'('#24180')'#65306
+    end
+    object lbl34: TLabel
+      Left = 16
+      Top = 482
+      Width = 60
+      Height = 13
+      Caption = #31199#20973#26085#26399#65306
+    end
+    object lbl35: TLabel
+      Left = 240
+      Top = 481
+      Width = 60
+      Height = 13
+      Caption = #22635#34920#26085#26399#65306
+    end
+    object lbl36: TLabel
+      Left = 16
+      Top = 512
+      Width = 63
+      Height = 13
+      Caption = #26426'         '#22411#65306
+    end
+    object lbl37: TLabel
+      Left = 240
+      Top = 512
+      Width = 63
+      Height = 13
+      Caption = #26426#20855'    SN'#65306
+    end
     object edtBN: TEdit
-      Left = 88
-      Top = 40
-      Width = 121
+      Left = 80
+      Top = 24
+      Width = 145
       Height = 21
       TabOrder = 0
       Text = 'edtBN'
     end
     object edtBSN: TEdit
-      Left = 288
-      Top = 40
-      Width = 121
+      Left = 304
+      Top = 24
+      Width = 145
       Height = 21
       TabOrder = 1
       Text = 'edtBSN'
     end
+    object edtRegAddr: TEdit
+      Left = 80
+      Top = 54
+      Width = 369
+      Height = 21
+      TabOrder = 2
+      Text = 'edtRegAddr'
+    end
+    object edtInstallAddr: TEdit
+      Left = 80
+      Top = 85
+      Width = 369
+      Height = 21
+      TabOrder = 3
+      Text = 'edtInstallAddr'
+    end
+    object edtLawman: TEdit
+      Left = 80
+      Top = 116
+      Width = 145
+      Height = 21
+      TabOrder = 4
+      Text = 'edtLawman'
+    end
+    object edtIdNo: TEdit
+      Left = 304
+      Top = 116
+      Width = 145
+      Height = 21
+      TabOrder = 5
+      Text = 'edtIdNo'
+    end
+    object edtTrueManage: TEdit
+      Left = 80
+      Top = 176
+      Width = 369
+      Height = 21
+      TabOrder = 6
+      Text = 'edtTrueManage'
+    end
+    object edtManageTime: TEdit
+      Left = 80
+      Top = 207
+      Width = 369
+      Height = 21
+      TabOrder = 7
+      Text = 'edtManageTime'
+    end
+    object edtSettleName: TEdit
+      Left = 80
+      Top = 238
+      Width = 145
+      Height = 21
+      TabOrder = 8
+      Text = 'edtSettleName'
+    end
+    object edtPhone: TEdit
+      Left = 304
+      Top = 238
+      Width = 145
+      Height = 21
+      TabOrder = 9
+      Text = 'edtPhone'
+    end
+    object edtOpenBank: TEdit
+      Left = 80
+      Top = 268
+      Width = 369
+      Height = 21
+      TabOrder = 10
+      Text = 'edtOpenBank'
+    end
+    object edtIdNo1: TEdit
+      Left = 80
+      Top = 298
+      Width = 145
+      Height = 21
+      TabOrder = 11
+      Text = 'edtIdNo1'
+    end
+    object edtSettleAccount: TEdit
+      Left = 304
+      Top = 298
+      Width = 145
+      Height = 21
+      TabOrder = 12
+      Text = 'edtSettleAccount'
+    end
+    object cbbInstallPlace: TComboBox
+      Left = 80
+      Top = 329
+      Width = 145
+      Height = 21
+      ItemHeight = 13
+      TabOrder = 13
+      Items.Strings = (
+        #24635#24215
+        #20998#24215
+        #21333#19968#24215)
+    end
+    object cbbTerminalStyle: TComboBox
+      Left = 304
+      Top = 329
+      Width = 145
+      Height = 21
+      ItemHeight = 13
+      TabOrder = 14
+      Items.Strings = (
+        #31227#21160#32456#31471
+        #22266#35805#32456#31471
+        #32593#32476#32456#31471
+        #20854#20182)
+    end
+    object edtPostCode: TEdit
+      Left = 80
+      Top = 360
+      Width = 145
+      Height = 21
+      TabOrder = 15
+      Text = 'edtPostCode'
+    end
+    object edtDeveloper: TEdit
+      Left = 304
+      Top = 359
+      Width = 145
+      Height = 21
+      TabOrder = 16
+      Text = 'edtDeveloper'
+    end
+    object edtTerminalAmount: TEdit
+      Left = 80
+      Top = 390
+      Width = 145
+      Height = 21
+      TabOrder = 17
+      Text = 'edtTerminalAmount'
+    end
+    object edtBindPhone: TEdit
+      Left = 304
+      Top = 390
+      Width = 145
+      Height = 21
+      TabOrder = 18
+      Text = 'edtBindPhone'
+    end
+    object edtProgramFee: TEdit
+      Left = 80
+      Top = 420
+      Width = 145
+      Height = 21
+      TabOrder = 19
+      Text = 'edtProgramFee'
+      OnKeyPress = edtProgramFeeKeyPress
+    end
+    object edtLender: TEdit
+      Left = 304
+      Top = 420
+      Width = 145
+      Height = 21
+      TabOrder = 20
+      Text = 'edtLender'
+    end
+    object edtLendArea: TEdit
+      Left = 80
+      Top = 451
+      Width = 145
+      Height = 21
+      TabOrder = 21
+      Text = 'edtLendArea'
+      OnKeyPress = edtLendAreaKeyPress
+    end
+    object edtLendFee: TEdit
+      Left = 304
+      Top = 451
+      Width = 145
+      Height = 21
+      TabOrder = 22
+      Text = 'edtLendFee'
+      OnKeyPress = edtLendFeeKeyPress
+    end
+    object dtpLendDate: TDateTimePicker
+      Left = 80
+      Top = 482
+      Width = 145
+      Height = 21
+      Date = 42834.439672893520000000
+      Format = 'yyyy'#24180'MM'#26376'dd'#26085
+      Time = 42834.439672893520000000
+      TabOrder = 23
+    end
+    object edtTool: TEdit
+      Left = 304
+      Top = 512
+      Width = 145
+      Height = 21
+      TabOrder = 24
+      Text = 'edtTool'
+    end
+    object cbbManageScope: TComboBox
+      Left = 80
+      Top = 146
+      Width = 369
+      Height = 21
+      ItemHeight = 13
+      TabOrder = 25
+      Items.Strings = (
+        #38646#21806#28895#37202#12290
+        #37202#21543#26381#21153#12290
+        #26381#35013#25209#38646#20860#33829#12290
+        #31080#21153#20195#29702#26381#21153#12290
+        #37327#36137#24335'KTV'#39184#39278#12290
+        #30707#33521#38047#30340#25209#38646#20860#21806#12290
+        #29664#23453#12289#37329#38134#39318#39280#38646#21806#12290
+        #21270#22918#21697#12289#26085#29992#21697#38144#21806#12290
+        #21046#21806#20919#28909#39278#12289#21654#21857#65307#38144#21806#23450#22411#21253#35013#39135#21697#12289#31957#28857#12289#37202#12289#39278#26009#12290
+        #32654#26415#24037#33402#21697#12289#20070#27861#12289#31686#21051#30340#33402#26415#21019#20316#65307#38144#21806#32654#26415#20316#21697#65307#25991#21270#29992#21697#30340#38144#21806#12290
+        #22269#20869#26053#28216#19994#21153#12289#20837#22659#26053#28216#19994#21153#65306#26053#28216#21830#21697#30340#38144#21806#65306#31080#21153#20195#29702#12289#37202#24215#39044#23450#12290
+        #23478#35013#20027#26448#65288#21355#28020#28783#39280#65289#12289#20303#23429#23478#20855#12289#21830#19994'/'#21150#20844#23478#20855#12289#23478#23621#39280#21697#12289#24067#33402#36719#39280#65288#31383#24088#27631#65289#12290
+        #21830#21697#30340#36816#36755#12289#37197#36865#12289#20179#20648#12289#21253#35013#12289#25644#36816#35013#21368#12289#27969#36890#21046#20316#65292#20197#21450#30456#20851#29289#27969#20449#24687#31561#29615#33410#12290
+        #25509#21463#21508#31867#27665#20107#26696#20214#24403#20107#20154#30340#22996#25176#65292#25285#20219#20195#29702#20154#65292#21442#21152#35785#35772#25110#21442#19982#30456#20851#27665#20107#27861#24459#20107#21153#30340#22788#29702#12290
+        #20445#38505#21450#24037#31243#20445#38505#65306#33337#33334#12289#36135#36816#20445#38505#65306#36131#20219#20445#38505#12289#20449#29992#20445#35777#20445#38505#65306#25237#36164#22411#20445#38505#65306#30701#26399#20581#24247#12289#24847#22806#20260#23475#20445#38505#12290
+        #20303#23487#12289#20013#24335#39184#12289#35199#39184#12289#26827#29260#12289#33590#39302#65292#20581#36523#25151#12289#37202#21543#12289'KTV'#12289#32654#23481#32654#21457#25353#25705#12289#21654#21857#21381#12289#38144#21806#39135#21697#65292#28895#37202#12289#39278#26009#12290)
+    end
+    object dtpFillDate: TDateTimePicker
+      Left = 304
+      Top = 481
+      Width = 145
+      Height = 21
+      Date = 42834.439672893520000000
+      Format = 'yyyy'#24180'MM'#26376'dd'#26085
+      Time = 42834.439672893520000000
+      TabOrder = 26
+    end
+    object cbbMachineMode: TComboBox
+      Left = 80
+      Top = 512
+      Width = 145
+      Height = 21
+      ItemHeight = 13
+      TabOrder = 27
+      Text = 'cbbMachineMode'
+    end
   end
   object grpContractNo: TGroupBox
-    Left = 456
+    Left = 488
     Top = 8
-    Width = 281
+    Width = 345
     Height = 57
     Caption = #21512#21516#32534#21495
     TabOrder = 1
@@ -73,57 +504,57 @@ object MainForm: TMainForm
     object edtInc: TEdit
       Left = 80
       Top = 24
-      Width = 185
+      Width = 245
       Height = 21
       TabOrder = 1
       Text = 'edtInc'
     end
   end
   object grpLicense: TGroupBox
-    Left = 456
-    Top = 72
-    Width = 281
-    Height = 169
+    Left = 488
+    Top = 69
+    Width = 345
+    Height = 201
     Caption = #33829#19994#25191#29031
     TabOrder = 2
     object lbl3: TLabel
       Left = 16
-      Top = 16
+      Top = 19
       Width = 60
       Height = 13
       Caption = #20449#29992#20195#30721#65306
     end
     object lbl8: TLabel
       Left = 16
-      Top = 40
+      Top = 50
       Width = 60
       Height = 13
       Caption = #31867'        '#22411#65306
     end
     object lbl9: TLabel
       Left = 16
-      Top = 64
+      Top = 175
       Width = 60
       Height = 13
       Caption = #27880#20876#26085#26399#65306
     end
     object lbl10: TLabel
       Left = 16
-      Top = 88
+      Top = 113
       Width = 60
       Height = 13
       Caption = #27880#20876#36164#26412#65306
     end
     object lbl11: TLabel
       Left = 16
-      Top = 112
+      Top = 144
       Width = 60
       Height = 13
       Caption = #30331#35760#26426#20851#65306
     end
     object lbl12: TLabel
       Left = 16
-      Top = 136
+      Top = 81
       Width = 60
       Height = 13
       Caption = #26680#20934#26085#26399#65306
@@ -131,41 +562,50 @@ object MainForm: TMainForm
     object edtCreditNo: TEdit
       Left = 80
       Top = 16
-      Width = 185
+      Width = 241
       Height = 21
       TabOrder = 0
       Text = 'edtCreditNo'
     end
     object cbbCategory: TComboBox
       Left = 80
-      Top = 40
-      Width = 185
+      Top = 47
+      Width = 241
       Height = 21
       ItemHeight = 13
       TabOrder = 1
       Text = 'cbbCategory'
+      Items.Strings = (
+        #20010#20307#24037#21830#25143
+        #20010#20154#29420#36164#20225#19994
+        #20840#27665#25152#26377#21046
+        #26377#38480#36131#20219#20844#21496#20998#20844#21496
+        #26377#38480#36131#20219#20844#21496#20998#20844#21496#65288#27861#20154#29420#36164#65289
+        #26377#38480#36131#20219#20844#21496
+        #26377#38480#36131#20219#20844#21496#65288#27861#20154#29420#36164#65289)
     end
     object dtpRegDate: TDateTimePicker
       Left = 80
-      Top = 64
-      Width = 186
+      Top = 78
+      Width = 241
       Height = 21
       Date = 42833.794358935190000000
+      Format = 'yyyy'#24180'MM'#26376'dd'#26085
       Time = 42833.794358935190000000
       TabOrder = 2
     end
     object edtRegCapital: TEdit
       Left = 80
-      Top = 88
-      Width = 185
+      Top = 109
+      Width = 241
       Height = 21
       TabOrder = 3
       Text = 'edtRegCapital'
     end
     object cbbRegAgent: TComboBox
       Left = 80
-      Top = 112
-      Width = 185
+      Top = 140
+      Width = 241
       Height = 21
       ItemHeight = 13
       TabOrder = 4
@@ -173,49 +613,50 @@ object MainForm: TMainForm
     end
     object dtpCheckDate: TDateTimePicker
       Left = 80
-      Top = 136
-      Width = 186
+      Top = 171
+      Width = 241
       Height = 21
       Date = 42833.797335694440000000
+      Format = 'yyyy'#24180'MM'#26376'dd'#26085
       Time = 42833.797335694440000000
       TabOrder = 5
     end
   end
   object grpPhoto: TGroupBox
-    Left = 456
-    Top = 248
-    Width = 369
-    Height = 273
+    Left = 488
+    Top = 272
+    Width = 345
+    Height = 251
     Caption = #35777#20214#29031
     TabOrder = 3
     object lbl4: TLabel
       Left = 8
       Top = 16
-      Width = 65
+      Width = 81
       Height = 13
       AutoSize = False
       Caption = #36523#20221#35777#27491#38754
     end
     object lbl5: TLabel
-      Left = 192
+      Left = 176
       Top = 16
-      Width = 65
+      Width = 81
       Height = 13
       AutoSize = False
       Caption = #36523#20221#35777#21453#38754
     end
     object lbl6: TLabel
       Left = 8
-      Top = 144
-      Width = 65
+      Top = 136
+      Width = 81
       Height = 13
       AutoSize = False
       Caption = #38134#34892#21345#27491#38754
     end
     object lbl7: TLabel
-      Left = 192
-      Top = 144
-      Width = 65
+      Left = 176
+      Top = 136
+      Width = 89
       Height = 13
       AutoSize = False
       Caption = #38134#34892#21345#21453#38754
@@ -223,38 +664,230 @@ object MainForm: TMainForm
     object pnl1: TPanel
       Left = 8
       Top = 32
-      Width = 177
-      Height = 105
-      Caption = 'pnl1'
+      Width = 161
+      Height = 97
       TabOrder = 0
+      object imgIDPos: TImage
+        Left = 8
+        Top = 8
+        Width = 145
+        Height = 81
+        Picture.Data = {
+          0A544A504547496D616765E3040000FFD8FFE000104A46494600010101006000
+          600000FFDB004300020101020101020202020202020203050303030303060404
+          0305070607070706070708090B0908080A0807070A0D0A0A0B0C0C0C0C07090E
+          0F0D0C0E0B0C0C0CFFDB004301020202030303060303060C0807080C0C0C0C0C
+          0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C
+          0C0C0C0C0C0C0C0C0C0C0C0C0CFFC00011080054009403012200021101031101
+          FFC4001F0000010501010101010100000000000000000102030405060708090A
+          0BFFC400B5100002010303020403050504040000017D01020300041105122131
+          410613516107227114328191A1082342B1C11552D1F02433627282090A161718
+          191A25262728292A3435363738393A434445464748494A535455565758595A63
+          6465666768696A737475767778797A838485868788898A92939495969798999A
+          A2A3A4A5A6A7A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6
+          D7D8D9DAE1E2E3E4E5E6E7E8E9EAF1F2F3F4F5F6F7F8F9FAFFC4001F01000301
+          01010101010101010000000000000102030405060708090A0BFFC400B5110002
+          0102040403040705040400010277000102031104052131061241510761711322
+          328108144291A1B1C109233352F0156272D10A162434E125F11718191A262728
+          292A35363738393A434445464748494A535455565758595A636465666768696A
+          737475767778797A82838485868788898A92939495969798999AA2A3A4A5A6A7
+          A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6D7D8D9DAE2E3
+          E4E5E6E7E8E9EAF2F3F4F5F6F7F8F9FAFFDA000C03010002110311003F00FDFC
+          A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800
+          A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800
+          A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800AF1AFF00
+          8287FC4FD6FE0BFEC33F15BC55E1BBC6D375ED0FC3379736176AA19AD661190B
+          2283C6E52723208C81C1E95ECB5F3EFF00C156E092E7FE09B7F1B163479197C2
+          37CE42AE48558C927E80024FA0140187E35FF826959DEFC3ED5ADF41F8ABF1F6
+          DBC49369F347A75F5DFC54D79A28AECC64452C88B71B4A8936B150B8C0200C71
+          557FE098DF183E2F6A5A27897E16FC76B7D2E6F893F0C60D3DAE758D3EEC5C45
+          ADDA5E2CFF006795F0A3138FB3481C8003655B009615D07EDE5E23F187C52FD9
+          27C45A7FC0BF893E0FF0EF8EAFED95EC2FE6BE8489E1232F1C32EE22195D4E12
+          620853FDD243AFC63FF042CF837FB40F82BF69AF145F7C46F88BA06BDA6D9784
+          74BD3F5DD156E5AF752B2976BBE9B14F379023324511BADDB27761E62EFDDB94
+          800FD56A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A
+          28A2800A8EF2CE1D46CE5B7B88639EDE7431C9148A192452305483C1047041A9
+          28A00F1993FE09C9FB3D4D23337C07F832CCC72CC7C15A6924FA9FDCD7A17C2E
+          F837E0FF0081DE1D6D1FC15E15F0DF83F49794CED65A26990E9F6ED21001731C
+          2AABB88032719E05749450014514500145145001451450014514500145145001
+          4514500145145001451450014514500145145001451450014514500145145001
+          4514500145145001451450014514500145145001451450014514500145145001
+          45145001451450014514500145145007FFD9}
+        Stretch = True
+        OnClick = imgIDPosClick
+      end
     end
     object pnl2: TPanel
-      Left = 192
+      Left = 176
       Top = 32
-      Width = 169
-      Height = 105
-      Caption = 'pnl1'
+      Width = 161
+      Height = 97
       TabOrder = 1
+      object imgIDNag: TImage
+        Left = 8
+        Top = 8
+        Width = 145
+        Height = 83
+        Picture.Data = {
+          0A544A504547496D616765E3040000FFD8FFE000104A46494600010101006000
+          600000FFDB004300020101020101020202020202020203050303030303060404
+          0305070607070706070708090B0908080A0807070A0D0A0A0B0C0C0C0C07090E
+          0F0D0C0E0B0C0C0CFFDB004301020202030303060303060C0807080C0C0C0C0C
+          0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C
+          0C0C0C0C0C0C0C0C0C0C0C0C0CFFC00011080054009403012200021101031101
+          FFC4001F0000010501010101010100000000000000000102030405060708090A
+          0BFFC400B5100002010303020403050504040000017D01020300041105122131
+          410613516107227114328191A1082342B1C11552D1F02433627282090A161718
+          191A25262728292A3435363738393A434445464748494A535455565758595A63
+          6465666768696A737475767778797A838485868788898A92939495969798999A
+          A2A3A4A5A6A7A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6
+          D7D8D9DAE1E2E3E4E5E6E7E8E9EAF1F2F3F4F5F6F7F8F9FAFFC4001F01000301
+          01010101010101010000000000000102030405060708090A0BFFC400B5110002
+          0102040403040705040400010277000102031104052131061241510761711322
+          328108144291A1B1C109233352F0156272D10A162434E125F11718191A262728
+          292A35363738393A434445464748494A535455565758595A636465666768696A
+          737475767778797A82838485868788898A92939495969798999AA2A3A4A5A6A7
+          A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6D7D8D9DAE2E3
+          E4E5E6E7E8E9EAF2F3F4F5F6F7F8F9FAFFDA000C03010002110311003F00FDFC
+          A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800
+          A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800
+          A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800AF1AFF00
+          8287FC4FD6FE0BFEC33F15BC55E1BBC6D375ED0FC3379736176AA19AD661190B
+          2283C6E52723208C81C1E95ECB5F3EFF00C156E092E7FE09B7F1B163479197C2
+          37CE42AE48558C927E80024FA0140187E35FF826959DEFC3ED5ADF41F8ABF1F6
+          DBC49369F347A75F5DFC54D79A28AECC64452C88B71B4A8936B150B8C0200C71
+          557FE098DF183E2F6A5A27897E16FC76B7D2E6F893F0C60D3DAE758D3EEC5C45
+          ADDA5E2CFF006795F0A3138FB3481C8003655B009615D07EDE5E23F187C52FD9
+          27C45A7FC0BF893E0FF0EF8EAFED95EC2FE6BE8489E1232F1C32EE22195D4E12
+          620853FDD243AFC63FF042CF837FB40F82BF69AF145F7C46F88BA06BDA6D9784
+          74BD3F5DD156E5AF752B2976BBE9B14F379023324511BADDB27761E62EFDDB94
+          800FD56A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A
+          28A2800A8EF2CE1D46CE5B7B88639EDE7431C9148A192452305483C1047041A9
+          28A00F1993FE09C9FB3D4D23337C07F832CCC72CC7C15A6924FA9FDCD7A17C2E
+          F837E0FF0081DE1D6D1FC15E15F0DF83F49794CED65A26990E9F6ED21001731C
+          2AABB88032719E05749450014514500145145001451450014514500145145001
+          4514500145145001451450014514500145145001451450014514500145145001
+          4514500145145001451450014514500145145001451450014514500145145001
+          45145001451450014514500145145007FFD9}
+        Stretch = True
+        OnClick = imgIDNagClick
+      end
     end
     object pnl3: TPanel
       Left = 8
-      Top = 160
-      Width = 177
-      Height = 105
-      Caption = 'pnl1'
+      Top = 152
+      Width = 161
+      Height = 95
       TabOrder = 2
+      object imgBankPos: TImage
+        Left = 8
+        Top = 6
+        Width = 145
+        Height = 83
+        Picture.Data = {
+          0A544A504547496D616765E3040000FFD8FFE000104A46494600010101006000
+          600000FFDB004300020101020101020202020202020203050303030303060404
+          0305070607070706070708090B0908080A0807070A0D0A0A0B0C0C0C0C07090E
+          0F0D0C0E0B0C0C0CFFDB004301020202030303060303060C0807080C0C0C0C0C
+          0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C
+          0C0C0C0C0C0C0C0C0C0C0C0C0CFFC00011080054009403012200021101031101
+          FFC4001F0000010501010101010100000000000000000102030405060708090A
+          0BFFC400B5100002010303020403050504040000017D01020300041105122131
+          410613516107227114328191A1082342B1C11552D1F02433627282090A161718
+          191A25262728292A3435363738393A434445464748494A535455565758595A63
+          6465666768696A737475767778797A838485868788898A92939495969798999A
+          A2A3A4A5A6A7A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6
+          D7D8D9DAE1E2E3E4E5E6E7E8E9EAF1F2F3F4F5F6F7F8F9FAFFC4001F01000301
+          01010101010101010000000000000102030405060708090A0BFFC400B5110002
+          0102040403040705040400010277000102031104052131061241510761711322
+          328108144291A1B1C109233352F0156272D10A162434E125F11718191A262728
+          292A35363738393A434445464748494A535455565758595A636465666768696A
+          737475767778797A82838485868788898A92939495969798999AA2A3A4A5A6A7
+          A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6D7D8D9DAE2E3
+          E4E5E6E7E8E9EAF2F3F4F5F6F7F8F9FAFFDA000C03010002110311003F00FDFC
+          A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800
+          A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800
+          A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800AF1AFF00
+          8287FC4FD6FE0BFEC33F15BC55E1BBC6D375ED0FC3379736176AA19AD661190B
+          2283C6E52723208C81C1E95ECB5F3EFF00C156E092E7FE09B7F1B163479197C2
+          37CE42AE48558C927E80024FA0140187E35FF826959DEFC3ED5ADF41F8ABF1F6
+          DBC49369F347A75F5DFC54D79A28AECC64452C88B71B4A8936B150B8C0200C71
+          557FE098DF183E2F6A5A27897E16FC76B7D2E6F893F0C60D3DAE758D3EEC5C45
+          ADDA5E2CFF006795F0A3138FB3481C8003655B009615D07EDE5E23F187C52FD9
+          27C45A7FC0BF893E0FF0EF8EAFED95EC2FE6BE8489E1232F1C32EE22195D4E12
+          620853FDD243AFC63FF042CF837FB40F82BF69AF145F7C46F88BA06BDA6D9784
+          74BD3F5DD156E5AF752B2976BBE9B14F379023324511BADDB27761E62EFDDB94
+          800FD56A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A
+          28A2800A8EF2CE1D46CE5B7B88639EDE7431C9148A192452305483C1047041A9
+          28A00F1993FE09C9FB3D4D23337C07F832CCC72CC7C15A6924FA9FDCD7A17C2E
+          F837E0FF0081DE1D6D1FC15E15F0DF83F49794CED65A26990E9F6ED21001731C
+          2AABB88032719E05749450014514500145145001451450014514500145145001
+          4514500145145001451450014514500145145001451450014514500145145001
+          4514500145145001451450014514500145145001451450014514500145145001
+          45145001451450014514500145145007FFD9}
+        Stretch = True
+        OnClick = imgBankPosClick
+      end
     end
     object pnl4: TPanel
-      Left = 192
-      Top = 160
-      Width = 169
-      Height = 105
-      Caption = 'pnl1'
+      Left = 176
+      Top = 152
+      Width = 161
+      Height = 94
       TabOrder = 3
+      object imgBankNag: TImage
+        Left = 8
+        Top = 6
+        Width = 145
+        Height = 83
+        Picture.Data = {
+          0A544A504547496D616765E3040000FFD8FFE000104A46494600010101006000
+          600000FFDB004300020101020101020202020202020203050303030303060404
+          0305070607070706070708090B0908080A0807070A0D0A0A0B0C0C0C0C07090E
+          0F0D0C0E0B0C0C0CFFDB004301020202030303060303060C0807080C0C0C0C0C
+          0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C
+          0C0C0C0C0C0C0C0C0C0C0C0C0CFFC00011080054009403012200021101031101
+          FFC4001F0000010501010101010100000000000000000102030405060708090A
+          0BFFC400B5100002010303020403050504040000017D01020300041105122131
+          410613516107227114328191A1082342B1C11552D1F02433627282090A161718
+          191A25262728292A3435363738393A434445464748494A535455565758595A63
+          6465666768696A737475767778797A838485868788898A92939495969798999A
+          A2A3A4A5A6A7A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6
+          D7D8D9DAE1E2E3E4E5E6E7E8E9EAF1F2F3F4F5F6F7F8F9FAFFC4001F01000301
+          01010101010101010000000000000102030405060708090A0BFFC400B5110002
+          0102040403040705040400010277000102031104052131061241510761711322
+          328108144291A1B1C109233352F0156272D10A162434E125F11718191A262728
+          292A35363738393A434445464748494A535455565758595A636465666768696A
+          737475767778797A82838485868788898A92939495969798999AA2A3A4A5A6A7
+          A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6D7D8D9DAE2E3
+          E4E5E6E7E8E9EAF2F3F4F5F6F7F8F9FAFFDA000C03010002110311003F00FDFC
+          A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800
+          A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800
+          A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800AF1AFF00
+          8287FC4FD6FE0BFEC33F15BC55E1BBC6D375ED0FC3379736176AA19AD661190B
+          2283C6E52723208C81C1E95ECB5F3EFF00C156E092E7FE09B7F1B163479197C2
+          37CE42AE48558C927E80024FA0140187E35FF826959DEFC3ED5ADF41F8ABF1F6
+          DBC49369F347A75F5DFC54D79A28AECC64452C88B71B4A8936B150B8C0200C71
+          557FE098DF183E2F6A5A27897E16FC76B7D2E6F893F0C60D3DAE758D3EEC5C45
+          ADDA5E2CFF006795F0A3138FB3481C8003655B009615D07EDE5E23F187C52FD9
+          27C45A7FC0BF893E0FF0EF8EAFED95EC2FE6BE8489E1232F1C32EE22195D4E12
+          620853FDD243AFC63FF042CF837FB40F82BF69AF145F7C46F88BA06BDA6D9784
+          74BD3F5DD156E5AF752B2976BBE9B14F379023324511BADDB27761E62EFDDB94
+          800FD56A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A
+          28A2800A8EF2CE1D46CE5B7B88639EDE7431C9148A192452305483C1047041A9
+          28A00F1993FE09C9FB3D4D23337C07F832CCC72CC7C15A6924FA9FDCD7A17C2E
+          F837E0FF0081DE1D6D1FC15E15F0DF83F49794CED65A26990E9F6ED21001731C
+          2AABB88032719E05749450014514500145145001451450014514500145145001
+          4514500145145001451450014514500145145001451450014514500145145001
+          4514500145145001451450014514500145145001451450014514500145145001
+          45145001451450014514500145145007FFD9}
+        Stretch = True
+        OnClick = imgBankNagClick
+      end
     end
   end
   object btnImport: TButton
-    Left = 464
+    Left = 520
     Top = 528
     Width = 75
     Height = 25
@@ -263,25 +896,33 @@ object MainForm: TMainForm
     OnClick = btnImportClick
   end
   object btnLog: TButton
-    Left = 588
-    Top = 536
+    Left = 632
+    Top = 528
     Width = 75
     Height = 25
     Caption = #24405#20837
     TabOrder = 5
+    OnClick = btnLogClick
   end
   object btnSave: TButton
-    Left = 696
+    Left = 744
     Top = 528
     Width = 75
     Height = 25
     Caption = #20445#23384
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 6
+    OnClick = btnSaveClick
   end
   object stat1: TStatusBar
     Left = 0
-    Top = 617
-    Width = 1049
+    Top = 559
+    Width = 840
     Height = 21
     Panels = <>
   end
@@ -297,7 +938,11 @@ object MainForm: TMainForm
   end
   object dlgOpen1: TOpenDialog
     Filter = #25991#26412#25991#26723'(*.txt)|*.txt|'#25152#26377#25991#20214'(*.*)|*.*'
-    Left = 440
-    Top = 344
+    Left = 456
+    Top = 360
+  end
+  object dlgOpenPic1: TOpenPictureDialog
+    Left = 464
+    Top = 408
   end
 end

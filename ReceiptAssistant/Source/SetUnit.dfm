@@ -41,6 +41,7 @@ object SetForm: TSetForm
   OldCreateOrder = False
   Position = poMainFormCenter
   OnKeyDown = FormKeyDown
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -66,6 +67,7 @@ object SetForm: TSetForm
     Height = 25
     Caption = #36873#25321'...'
     TabOrder = 1
+    OnClick = btnSelectClick
   end
   object btnOK: TButton
     Left = 24
@@ -74,6 +76,7 @@ object SetForm: TSetForm
     Height = 25
     Caption = #30830#23450
     TabOrder = 2
+    OnClick = btnOKClick
   end
   object btnCancel: TButton
     Left = 280
